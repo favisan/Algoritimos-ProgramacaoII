@@ -1,5 +1,7 @@
 package Aula7_QuickSort;
 
+import java.util.Arrays;
+
 /**
  * @author pedro.saraujo
  */
@@ -8,10 +10,11 @@ public class QuickSort {
     public static void main(String[] args) {
         int v[] = {5, 6, 2, 7, 9, 1, 8, 3, 7};
         int i = particao(v, 0, v.length - 1);
-        imprimeVetor(v);
+        System.out.println(Arrays.toString(v));
         System.out.println("Pivo: " + i);
         quickSort(v, 0, v.length - 1);
-        imprimeVetor(v);
+        System.out.println(Arrays.toString(v));
+
     }
 
     // A função quickSort recebe como parametro, p < r, 
@@ -54,9 +57,7 @@ public class QuickSort {
         return j;
     }
 
-    public static void imprimeVetor(int v[]) {
-        for (int i = 0; i < v.length; i++) {
-            System.out.print(v[i] + " ");
-        }
-    }
+    //   public static void imprimeVetor(int v[]) {
+    //     for (int i = 0; i < v.length; i++) {
+    //}
 }
