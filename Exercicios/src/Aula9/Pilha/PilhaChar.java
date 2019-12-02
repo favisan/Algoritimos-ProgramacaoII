@@ -3,13 +3,13 @@ package Aula9.Pilha;
 /**
  * @author pedro.saraujo
  */
-public class Pilha {
+public class PilhaChar {
 
     // atributos
     private char[] elementos;
     private int topo;
 
-    public Pilha(int n) {
+    public PilhaChar(int n) {
         elementos = new char[n];
         topo = -1;
     }

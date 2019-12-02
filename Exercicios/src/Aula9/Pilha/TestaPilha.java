@@ -6,7 +6,7 @@ package Aula9.Pilha;
 public class TestaPilha {
 
     public static void main(String[] args) {
-        Pilha p = new Pilha(30);
+        PilhaChar p = new PilhaChar(30);
         p.push('a');
         p.push('b');
         p.push('c');

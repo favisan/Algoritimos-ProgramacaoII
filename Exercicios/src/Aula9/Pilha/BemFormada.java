@@ -7,7 +7,7 @@ package Aula9.Pilha;
 public class BemFormada {
 
     public static boolean bemFormada(String s) {
-        Pilha p = new Pilha(s.length());
+        PilhaChar p = new PilhaChar(s.length());
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c == '(' || c == '[') { // empilha

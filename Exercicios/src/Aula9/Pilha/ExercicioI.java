@@ -21,7 +21,7 @@ public class ExercicioI {
         Scanner in = new Scanner(System.in);
         System.out.print("Texto: ");
         String s = in.nextLine();
-        Pilha p = new Pilha(100);
+        PilhaChar p = new PilhaChar(100);
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c != ' ') {
