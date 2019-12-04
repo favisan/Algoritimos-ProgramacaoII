@@ -2,7 +2,6 @@
 package Aula9.Pilha;
 
 /**
- *
  * @author pedro.saraujo
  */
 public class InfixaPosfixa {
@@ -50,13 +49,13 @@ public class InfixaPosfixa {
                     || c == '*' || c == '/' ) {
                 posfixa += " ";
                 while (!p.isEmpty() 
-                        && prioridade(p.top()) >= prioridade(c)) {
+                        && prioridade(p.pop()) >= prioridade(c)) {
                     posfixa += p.pop();
                 }
                 p.push(c);
             }
             else if (c == ')') {
-                while (p.top() != '(') {
+                while (p.pop() != '(') {
                     posfixa += p.pop();
                 }
                 p.pop();
