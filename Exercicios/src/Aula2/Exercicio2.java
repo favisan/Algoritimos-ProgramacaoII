@@ -1,5 +1,7 @@
 package Aula2;
 
+import java.util.Arrays;
+
 /**
  *
  * @author pedro.saraujo
@@ -33,14 +35,16 @@ public class Exercicio2 {
         }
         return c;
     }
-    
+
     public static void main(String[] args) {
-        int a[] = {1,3,5,7};
-        int b[] = {2,4,6};
-        int res[] = intercalar(a,b);
-        
-        for (int i = 0; i < res.length; i++) {
+        int a[] = {1, 3, 5, 7};
+        int b[] = {2, 4, 6};
+        int res[] = intercalar(a, b);
+        System.out.println("Vetor A: "+ Arrays.toString(a));
+        System.out.println("Vetor B: "+ Arrays.toString(b));
+        System.out.println("Vetor Intercalado: "+Arrays.toString(res));
+        /*for (int i = 0; i < res.length; i++) {
             System.out.println("Res["+i+"]="+res[i]);
-        }
+        }*/
     }
 }
